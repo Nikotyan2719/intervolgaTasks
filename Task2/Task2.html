@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="Task2.css">
+</head>
+
+
+
+
+<body>
+<button id="myBtn">Open Modal</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close closeModal">&times;</span>
+    <div class="transportBlock">
+      <p class="regBlockName">Транспортные средства и водители</p>
+      <div class="inputBlock">
+        <p>Гос-номер</p>
+        <input id="gosNumber" type="text" placeholder="Укажите гос-номер">
+      </div>
+      <div class="inputBlock">
+        <p>Транспортное средство</p>
+        <input id="transport" type="text" placeholder="Транспортное средство">
+      </div>
+      <div class="inputBlock">
+        <p>Ореинтировочная дата прибытия к покупателю</p>
+        <input id="date" type="text"  placeholder="Дата">
+      </div>
+    </div>
+    <div class="driverInfo">
+      <p class="driverBlockName">Данные о водителе</p>
+      <div class="inputBlock">
+        <p>ФИО</p>
+        <input id="driverName" type="text" placeholder="Укажите ФИО водителя">
+      </div>
+      <div class="inputBlock">
+        <p>Паспортные данные</p>
+        <div class="passportDataBlock">
+          <input id="passSeries" type="text" placeholder="Серия">
+          <input id="passNum" type="text" placeholder="Номер">
+        </div>
+      </div>
+      <div class="inputBlock">
+        <p>Кем выдан</p>
+        <input id="who" type="text" placeholder="Кем выдан">
+      </div>
+      <div class="inputBlock">
+        <p>Когда выдан</p>
+        <input id="when" type="text" placeholder="Когда выдан">
+      </div>
+    </div>
+    <div class="form-buttons">
+      <button type="submit" class="button submitBtn" id="submitBtn">Отправить</button>
+      <button class="button cancelBtn closeModal" >Отменить</button>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="Task2.js"></script>
+</body>
+</html>
